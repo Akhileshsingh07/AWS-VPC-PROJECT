@@ -9,7 +9,7 @@ AWS-VPC PROJECT--- used for servers in production enviroment.
 
 🔗Creating a VPC == To improve resiliency 
                                  ➤servers are deployed in two availabilty zones by using
-                                 ➤Auto scaling groups & 
+                                 ➤Auto scaling groups 
                                  ➤application load balancer 
                                  ➤There is one public and one private subnets in both the availabilty zones
                                  ➤For additional security we deploy servers on private subnets 
@@ -18,10 +18,9 @@ AWS-VPC PROJECT--- used for servers in production enviroment.
                                  ➤Bastien host for masking the private subnet ec2 ip-address
 
 🔁Auto-Scaling-Groups == By integrating Auto-scaling groups we can achieve  
-                                                  ➤Dynamic scaling ➤High availabilty ➤efficient resource                                                                                                                                                 managment  ➤the network isolation and security.
+   ➤Dynamic scaling ➤High availabilty ➤efficient resource managment  ➤the network isolation and security.
 
-⚖️Load-Balancer ==  It distributes incoming traffic across multiple instances, ensuring 
-                                                   ➤fault tolerance ➤maximizing resources utlization
+⚖️Load-Balancer ==  It distributes incoming traffic across multiple instances, ensuring ➤fault tolerance ➤maximizing resources utlization
 
 📡NAT-gateways == Enables the instances in private subnets to access the internet .
  
@@ -32,3 +31,5 @@ AWS-VPC PROJECT--- used for servers in production enviroment.
 
 
 Workflow of Aws-vpc ➤when user wants to access application from outer internet, request flows from internet gatewway in vpc to application load balancer present in public subnets with target groups present in it which targets the applications present in instances. Then requests flows from load balencer to applications present in ec2 instances in private subnets with the help of route table which decides the route of requests and flows to its target application.
+
+
